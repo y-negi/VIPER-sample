@@ -1,0 +1,16 @@
+{"fruits":
+    [
+        {
+            "name": "りんご",
+            "description": "赤い！"
+        },
+        {
+            "name": "バナナ",
+            "description": "黄色い！"
+        },
+        {
+            "name": "ぶどう",
+            "description": "むらさき"
+        }
+    ]
+}

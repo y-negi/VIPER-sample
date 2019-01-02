@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FruitListTableViewCell" id="bb7-4R-01h" customClass="FruitListTableViewCell" customModule="viper_sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bb7-4R-01h" id="Lvb-1I-4ma">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="JXQ-is-oNH">
+                        <rect key="frame" x="16" y="0.0" width="343" height="40.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSv-QT-Ff1">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="40.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="d6M-b0-cYo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oya-OW-u53">
+                                <rect key="frame" x="105" y="0.0" width="238" height="40.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Z9R-vQ-Hoh"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JXQ-is-oNH" firstAttribute="top" secondItem="Lvb-1I-4ma" secondAttribute="top" id="4BX-xw-prW"/>
+                    <constraint firstItem="JXQ-is-oNH" firstAttribute="leading" secondItem="Lvb-1I-4ma" secondAttribute="leading" constant="16" id="83r-fM-y2d"/>
+                    <constraint firstAttribute="trailing" secondItem="JXQ-is-oNH" secondAttribute="trailing" constant="16" id="HVr-dc-6LR"/>
+                    <constraint firstAttribute="bottom" secondItem="JXQ-is-oNH" secondAttribute="bottom" id="xMV-BJ-83w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="Oya-OW-u53" id="z4n-Pe-Owd"/>
+                <outlet property="nameLabel" destination="XSv-QT-Ff1" id="Rck-Wv-Vgd"/>
+            </connections>
+            <point key="canvasLocation" x="96.799999999999997" y="45.42728635682159"/>
+        </tableViewCell>
+    </objects>
+</document>
